@@ -22,12 +22,13 @@ function submitForm(event) {
     document.getElementById("successAlert").classList.remove("d-none");
   
     // Reset form fields
-    document.getElementById("myForm").reset();
     alert ("1.EmpName : " + document.getElementById("name").value + "\n"+ 
         "2.Email : " + document.getElementById("email").value + "\n"+
         "3.Salary : " + `$${parseFloat(document.getElementById("salary").value).toLocaleString(undefined, {minimumFractionDigits: 2})}` + "\n"+
         "4.HireDate " + document.getElementById("hireDate").value + "\n"
       )
+
+    document.getElementById("myForm").reset();
 
 }
   
